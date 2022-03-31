@@ -1,0 +1,28 @@
+<br/>
+<div class="container" id="registration-form">
+    <div class="image">
+        <div class="frm">
+            <h1>Registro</h1>
+            <form [formGroup]="formEmployed" (click)="saveEmployed()" autocomplete="nope">
+                <br/>
+                
+                <label for="name">Nombre</label>
+                <input type="text" name="name" class="form-control" formControlName="name"  autocomplete="nope"/>
+                <span class="text-danger" *ngIf="showWarning('name')">* Es requerido el nombre</span><br/>
+        
+                <label for="lastName">Apellido</label>
+                <input type="text" name="lastName" class="form-control" formControlName="lastName" autocomplete="nope"/>
+                <span class="text-danger" *ngIf="showWarning('lastName')">* Es requerido el apellido</span><br/>
+        
+                <label for="email">Correo</label>
+                <input type="text" name="email" class="form-control" formControlName="email" autocomplete="nope"/>
+                <span class="text-danger" *ngIf="showWarning('email')">* Es requerido un correo</span><br/>
+                
+                <br/>
+                <div>
+                    <button type="submit" mat-raised-button color="primary" >Guardar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

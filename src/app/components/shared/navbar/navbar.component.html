@@ -1,0 +1,15 @@
+<mat-toolbar color="primary">
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon" [matMenuTriggerFor]="menu">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu">
+      <button mat-menu-item (click)="nuevo()">Nuevo</button>
+      <button mat-menu-item (click)="list()">Lista</button>
+      <button mat-menu-item (click)="edit()">Editar</button>
+      <button mat-menu-item (click)="details()">Detalles</button>
+  </mat-menu>
+  <span>Proyecto CRUD</span>
+  <span class="example-spacer"></span>
+  <mat-icon>person</mat-icon> 
+  <span>Jhon Leon</span>  
+</mat-toolbar>

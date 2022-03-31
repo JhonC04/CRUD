@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "proyect-823b7": {
+      "hosting": {
+        "Project_CRUD": [
+          "proyect-823b7"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "proyect-823b7"
+  }
+}
